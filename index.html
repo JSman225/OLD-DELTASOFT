@@ -1,10 +1,8 @@
-
  <!DOCTYPE html>
- <html hreflang="en">
+ <html>
 <head>
 <title>Deltasoft - Homepage</title>
 <link rel="icon" href="logo.png">
-<meta name="description" content="A innovative and creative technology powerhouse dedicated to creating and providing access to help and modern Tools, Resources, and Ideas.">
 <link rel="stylesheet" media="screen and (min-width: 1200px)" href="medium-screen.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js.js"></script>
@@ -22,6 +20,71 @@
 <h3 class="bottom-top-text">Tools, Resources, and Ideas</h3>
 
 <button class="main-button">You Should Click Me</button>
+
+
+
+ <header class="header">
+<div id="header" class="header1"></div>
+ <h1 class="header-name">DELTA<span style="color:#499bff;">SOFT</span></h1> 
+<img class="logo" src="logo.png">
+<div class="menu-container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+<script>
+var open = false;
+function myFunction(x) {
+  x.classList.toggle("change");
+if (!open){
+//open
+
+open = true;
+}
+else if (open){
+//close
+
+open = false;
+}
+}
+
+
+
+function changeCss () {
+  this.scrollY > 5 ? document.getElementById("header").style.opacity = ".85" : document.getElementById("header").style.opacity = "0";
+}
+
+window.addEventListener("scroll", changeCss , false);
+
+
+</script>
+</div>
+
+</header>
+
+
+ </html> <!DOCTYPE html>
+ <html>
+<head>
+<title>Deltasoft - Homepage</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" media="screen and (min-width: 1200px)" href="medium-screen.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js.js"></script>
+<meta name="viewport" content="initial-scale=1">
+</head>
+
+<img class="tools" src="tools.jpg">
+<img class="resources" src="resources.png">
+<img class="ideas" src="ideas.jpg">
+<div class="blue-tint"></div>
+
+
+<h1 class="top-text">An Innovative Computing Technologies</h1>
+
+<h3 class="bottom-top-text">Tools, Resources, and Ideas</h3>
+
+<button class="main-button">You Should Click Me</button>
+
 
 
  <header class="header">
