@@ -1,1 +1,0 @@
-# deltasoft.github.io
