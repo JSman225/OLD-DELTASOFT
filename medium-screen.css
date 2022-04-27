@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @font-face {
   font-family: "Deltasoft";
-  src: url("https://github.com/karl-leonardi/home/blob/main/Deltasoft.ttf");
+  src: url(./Deltasoft.ttf");
 }
 html{
 font-family: "Deltasoft";
