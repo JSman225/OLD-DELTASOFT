@@ -4,7 +4,6 @@
   src: url("../../Deltasoft.ttf");
 }
 html{
-font-family: "Deltasoft";
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -46,6 +45,7 @@ height:100%;
 color: white;
 position:absolute;
 left:50px;
+font-family: "Deltasoft";
 }
 .tools{
   position:absolute;
