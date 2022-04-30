@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+ <html>
+<head>
+<title>Deltasoft - Contact Us</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" media="screen and (min-width: 1200px)" href="medium-screen.css">
+<link rel="stylesheet" media="screen and (max-width: 1200px)" href="small-screen.css">
+<link rel="stylesheet" media="screen and (max-width: 550px)" href="phone-screen.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js.js"></script>
+<meta name="viewport" content="initial-scale=1">
+</head>
+ <header id="header1" class="header">
+<div id="menu-wrapper" class="menu-wrapper">
+
+<h2>Home</h2>
+
+<h2>About Us</h2>
+
+<h2>Services</h2>
+
+</div>
+
+<div id="header" class="header1"></div>
+ <h1 onclick="window.location.replace('../home/index.html');" class="header-name">DELTA<span style="color:#499bff;">SOFT</span></h1> 
+<img onclick="window.location.replace('../home/index.html');" class="logo" src="logo.png">
+<div class="menu-container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+
+</div>
+
+</header>
+
+<img src="1.jpg">
+<img src="2.jpg">
+<img src="5.jpg">
+<img src="4.jpg">
+<img src="3.jpg">
+
+<form class="form-wrapper" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+  <h1>Contact Us</h1>
+  <p>
+    <label>Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Subject: <input type="text" name="subject" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <div data-netlify-recaptcha="true"></div>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
+
+
+</html>
