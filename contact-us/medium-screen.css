@@ -238,7 +238,6 @@ border-radius:15px;
 
 .recaptcha{
 position:absolute;
-bottom:10%;
+bottom:15%;
 left:5%;
-width:300px;
 }
