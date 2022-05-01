@@ -7,8 +7,9 @@
 <link rel="stylesheet" media="screen and (max-width: 1200px)" href="small-screen.css">
 <link rel="stylesheet" media="screen and (max-width: 550px)" href="phone-screen.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script src="js.js"></script>
-<meta name="viewport" content="initial-scale=1">
+<meta name="viewport" content="initial-scale=1,  minimum-scale=1">
 </head>
 
  <header id="header1" class="header">
@@ -24,7 +25,9 @@
 
 <div id="header" class="header1"></div>
  <h1 class="header-name">DELTA<span style="color:#499bff;">SOFT</span></h1> 
-<img class="logo" src="logo.png">
+
+<div class="login" data-netlify-identity-button>Login with Netlify Identity</div>
+
 <div class="menu-container" onclick="myFunction(this)">
   <div class="bar1"></div>
   <div class="bar2"></div>
@@ -43,7 +46,7 @@
 <img class="ideas" src="ideas.jpg">
 <img class="resources" src="resources.png">
 <div class="blue-tint"></div>
-
+<img class="logo1" src="logo.png">
 
 <h1 class="top-text">An Innovative Computing Technologies</h1>
 
@@ -59,11 +62,11 @@
 </div>
 <div class="mini-services-background"></div>
 
-<h3 class="mini-services-title mini-services-opacity">Explore Our Services</h3>
-<div class="mini-services-opacity" style="position:absolute; left:10%; top:119vh;"><img class="not-draggable"  style="width:150%;" src="computer.png"></div>
-<div class="mini-services-opacity" style="position:absolute; left:35%; top:119vh;"><img class="not-draggable"  style="width:120%;" src="internet.png"></div>
-<div class="mini-services-opacity" style="position:absolute; left:60%; top:120.5vh;"><img class="not-draggable"  style="width:95%;" src="website.png"></div>
-<div class="mini-services-opacity" style="position:absolute; left:85%; top:120.5vh;"><img class="not-draggable"  style="width:100%;" src="article.png"></div>
+<h3 class="mini-services-opacity mini-services-title">Explore Our Services</h3>
+<div onclick="slide1()" class="mini-services-opacity" style="position:absolute; left:10%; top:119vh;"><img class="not-draggable"  style="width:150%;" src="computer.png"></div>
+<div onclick="slide2()" class="mini-services-opacity" style="position:absolute; left:35%; top:119vh;"><img class="not-draggable"  style="width:120%;" src="internet.png"></div>
+<div onclick="slide3()" class="mini-services-opacity" style="position:absolute; left:60%; top:120.5vh;"><img class="not-draggable"  style="width:95%;" src="website.png"></div>
+<div onclick="slide4()" class="mini-services-opacity" style="position:absolute; left:85%; top:120.5vh;"><img class="not-draggable"  style="width:100%;" src="article.png"></div>
 
 <div class="mini-services-menu mini-services-opacity">
 <p onmouseover="line1()" onmouseout="reset()" onclick="slide1()" style="flex-basis: 25%; cursor:pointer;">Service 1</p><p onmouseover="line2()" onclick="slide2()" onmouseout="reset()" onmouseout="reset()" style="flex-basis: 25%; cursor:pointer;">Service 2</p><p onmouseover="line3()" onclick="slide3()" onmouseout="reset()" style="flex-basis: 25%; cursor:pointer;">Service 3</p><p onmouseover="line4()" onclick="slide4()" style="flex-basis: 25%; cursor:pointer;">Service 4</p>
