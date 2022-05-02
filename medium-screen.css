@@ -11,7 +11,7 @@ z-index:1;
 scroll-behavior: smooth;
 }
 body{
-height:300vh;
+height:200vh;
 }
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
@@ -73,7 +73,9 @@ padding:0px;
 
 
 
-
+.phone-screen{
+display:none;
+}
 
 
 
