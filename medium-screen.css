@@ -80,7 +80,7 @@ display:none;
 						[data-netlify-identity-button] a {
 							display: block;
 							position: absolute;
-							top:20%
+							top:20%;
 							right:5%;
 							width: 100%;
 							max-width: 184px;
