@@ -80,10 +80,8 @@ display:none;
 						[data-netlify-identity-button] a {
 							display: block;
 							position: absolute;
-							top:50%;
-							-webkit-transform: translateX(-50%);
-							transform: translateX(-50%);
-							right:10%;
+							top:25%;
+							right:8%;
 							width: 100%;
 							max-width: 184px;
 							height: auto;
