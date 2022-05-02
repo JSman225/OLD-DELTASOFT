@@ -80,7 +80,7 @@ display:none;
 [data-netlify-identity-button] a {
 background-color:red;
 width:10vw;
-height:50vh;
+height:50%;
 position:absolute;
 right:5%;
 top:50%;
