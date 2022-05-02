@@ -118,7 +118,7 @@ const user = netlifyIdentity.currentUser();
 
 // Bind to events
 netlifyIdentity.on('init', user => console.log('init', user));
-netlifyIdentity.on('login', user => console.log('login', user.e));
+netlifyIdentity.on('login', user => console.log('login', user.e.email));
 netlifyIdentity.on('logout', () => console.log('Logged out'));
 
 
