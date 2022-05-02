@@ -112,3 +112,15 @@ function slide4(){
 document.getElementById('mini-slider').style.left = "-300vw";
 slide = '80vw';
 };
+
+
+const user = netlifyIdentity.currentUser();
+
+// Bind to events
+netlifyIdentity.on('init', user => console.log('init', user));
+netlifyIdentity.on('login', user => console.log('login', user));
+netlifyIdentity.on('logout', () => console.log('Logged out'));
+
+
+
+
