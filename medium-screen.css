@@ -79,7 +79,10 @@ display:none;
 
 						[data-netlify-identity-button] a {
 							display: block;
-							position: relative;
+							position: absolute;
+							top:50%
+							-webkit-transform: translateX(-50%);
+							transform: translateX(-50%);
 							width: 100%;
 							max-width: 184px;
 							height: auto;
