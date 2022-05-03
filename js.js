@@ -124,9 +124,9 @@ netlifyIdentity.on('init', user => {
 });
 netlifyIdentity.on('login', user => {
      token = user.token.access_token;
-
+console.log(user);
 });
 netlifyIdentity.on('logout', () => {
  token = ''; 
 });
-console.log(user);
+
