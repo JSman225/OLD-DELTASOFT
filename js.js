@@ -117,7 +117,9 @@ slide = '80vw';
 const user = netlifyIdentity.currentUser();
 // Bind to events
 netlifyIdentity.on('init', user => {
+  if (user.token.access_token != null){
 console.log(user.token.access_token);
+  }
 });
 netlifyIdentity.on('login', user => console.log('login', user));
 netlifyIdentity.on('logout', () => console.log('Logged out'));
