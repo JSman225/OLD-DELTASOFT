@@ -127,6 +127,7 @@ netlifyIdentity.on('login', user => {
 console.log(user);
   
   console.log(user.user_metadata.avatar_url);
+  document.getElementById('user_avatar').src=user.user_metadata.avatar_url;
 });
 netlifyIdentity.on('logout', () => {
  token = ''; 
