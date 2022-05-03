@@ -126,6 +126,7 @@ netlifyIdentity.on('login', user => {
      token = user.token.access_token;
 console.log(user);
   user.update({ avatar: user.user_metadata.avatar_url })
+  consolte.log(user.avatar);
 });
 netlifyIdentity.on('logout', () => {
  token = ''; 
