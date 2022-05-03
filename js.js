@@ -113,13 +113,19 @@ document.getElementById('mini-slider').style.left = "-300vw";
 slide = '80vw';
 };
 
-
+var token = '';
 const user = netlifyIdentity.currentUser();
 // Bind to events
 netlifyIdentity.on('init', user => {
   if (user != null){
-console.log(user.token.access_token);
+    token = user.token.access_token;
+console.log(token);
   }
 });
-netlifyIdentity.on('login', user => console.log('login', user));
-netlifyIdentity.on('logout', () => console.log('Logged out'));
+netlifyIdentity.on('login', user => {
+     token = user.token.access_token;
+console.log(token); 
+});
+netlifyIdentity.on('logout', () => {
+ token = ''; 
+});
