@@ -126,9 +126,13 @@ netlifyIdentity.on('init', user => {
 netlifyIdentity.on('login', user => {
      token = user.token.access_token;
 console.log(user);
-  
+   if (user.user_metadata.avatar_url != null){
   console.log(user.user_metadata.avatar_url);
+   
   document.getElementById('user_avatar').src=user.user_metadata.avatar_url;
+}else{
+ console.log('no avatar icon') ;
+};
 });
 netlifyIdentity.on('logout', () => {
  token = ''; 
