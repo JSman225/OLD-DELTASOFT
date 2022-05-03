@@ -117,7 +117,7 @@ slide = '80vw';
 const user = netlifyIdentity.currentUser();
 // Bind to events
 netlifyIdentity.on('init', user => {
-  if (user.token.access_token != null){
+  if (user != null){
 console.log(user.token.access_token);
   }
 });
