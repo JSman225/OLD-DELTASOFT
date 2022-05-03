@@ -122,4 +122,5 @@ netlifyIdentity.on('login', user => console.log('login', user));
 netlifyIdentity.on('logout', () => console.log('Logged out'));
 
 
-alert(user.token);
+alert(user['token']['access_token']);
+['token']['access_token']
