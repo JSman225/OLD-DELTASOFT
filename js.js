@@ -119,12 +119,12 @@ const user = netlifyIdentity.currentUser();
 netlifyIdentity.on('init', user => {
   if (user != null){
     token = user.token.access_token;
-console.log(token);
+
   }
 });
 netlifyIdentity.on('login', user => {
      token = user.token.access_token;
-console.log(token); 
+
 });
 netlifyIdentity.on('logout', () => {
  token = ''; 
