@@ -114,7 +114,7 @@ slide = '80vw';
 };
 
 var token = '';
-document.getElementById('user_avatar').src='https://cdn.clipartsfree.net/vector/medium/70605-profile-images.png';
+
 const user = netlifyIdentity.currentUser();
 // Bind to events
 netlifyIdentity.on('init', user => {
