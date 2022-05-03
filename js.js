@@ -129,4 +129,4 @@ netlifyIdentity.on('login', user => {
 netlifyIdentity.on('logout', () => {
  token = ''; 
 });
-alert(user);
+console.log(user);
