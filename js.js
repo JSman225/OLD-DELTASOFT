@@ -135,7 +135,7 @@ console.log(user);
   console.log(tempAvatar);
   document.getElementById('user_avatar').style.display="none";
   document.getElementById('temp_user_avatar').innerHTML=tempAvatar;
-  document.getElementById('temp_user_avatar').style.display="block";
+  document.getElementById('temp_user_avatar_container').style.display="block";
  console.log('no avatar icon') ;
 };
 });
