@@ -166,7 +166,17 @@ height:100px;
 clip-path: circle(50% at 50% 50%);
 }
 
-
+#temp_user_avatar{
+position:absolute;	
+right:30%;
+top:2%;
+width:100px;
+height:100px;
+clip-path: circle(50% at 50% 50%);
+display:none;
+font-size:40px;
+text-align:center;
+}
 
 
 
