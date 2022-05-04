@@ -141,6 +141,8 @@ console.log(user);
 });
 netlifyIdentity.on('logout', () => {
  token = ''; 
+  tempAvatar = '';
+  document.getElementById('temp_user_avatar_container').style.display="none";
   document.getElementById('user_avatar').src='https://cdn.clipartsfree.net/vector/medium/70605-profile-images.png';
 });
 
