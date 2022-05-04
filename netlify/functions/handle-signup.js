@@ -1,5 +1,5 @@
-exports.handler = async () => ({
-    const data = JSON.parse(event.body);
+exports.handler = function(event, context, callback) {
+  const data = JSON.parse(event.body);
   const { user } = data;
     
   const responseBody = {
@@ -12,6 +12,8 @@ exports.handler = async () => ({
       custom_data_from_function: "hurray this is some extra metadata"
     }
   };
-  statusCode: 200,
-  body: JSON.stringify(responseBody),
-});
+  callback(null, {
+    statusCode: 200,
+    body: JSON.stringify(responseBody)
+  });
+};
