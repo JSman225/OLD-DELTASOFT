@@ -135,7 +135,7 @@ console.log(user);
   console.log(tempAvatar);
   document.getElementById('user_avatar').style.display="none";
   const colors = ["Red", "Yellow", "Blue", "Purple", "Green", "Lightblue", "Limegreen"];
-  const randomColor = Math.floor(Math.andom() * colors.length);
+  const randomColor = Math.floor(Math.random() * colors.length);
   document.getElementById('temp_user_avatar').style.backgroundColor=randomColor;
   document.getElementById('temp_user_avatar').innerHTML=tempAvatar;
   document.getElementById('temp_user_avatar').style.display="block";
