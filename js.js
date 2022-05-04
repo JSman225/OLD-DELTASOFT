@@ -114,7 +114,7 @@ slide = '80vw';
 };
 
 var token = '';
-
+var tempAvatar = '';
 const user = netlifyIdentity.currentUser();
 // Bind to events
 netlifyIdentity.on('init', user => {
@@ -131,6 +131,8 @@ console.log(user);
    
   document.getElementById('user_avatar').src=user.user_metadata.avatar_url;
 }else{
+  tempAvatar = user.user_metadata.full_name.charAt(0);
+  console.log(tempAvatar);
  console.log('no avatar icon') ;
 };
 });
