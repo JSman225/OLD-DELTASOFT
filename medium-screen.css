@@ -181,7 +181,7 @@ text-align:center;
 #temp_user_avatar{
 font-family: 'Poppins', sans-serif;
 vertical-align: middle;
-//line-height: 50px;
+line-height: 0px;
 }
 
 
