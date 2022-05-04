@@ -177,6 +177,7 @@ display:none;
 font-size:40px;
 font-family: 'Poppins', sans-serif;
 background-color:<?php printf( "#%06X\n", mt_rand( 0, 0x222222 )); ?>
+text-align:center;
 }
 
 
