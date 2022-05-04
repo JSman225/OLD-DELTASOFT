@@ -134,12 +134,6 @@ console.log(user);
   tempAvatar = user.user_metadata.full_name.charAt(0);
   console.log(tempAvatar);
   document.getElementById('user_avatar').style.display="none";
-  function random(){
-  const colors = ["red;", "yellow;", "blue;", "purple;", "green;", "lightblue;", "limegreen;"];
-  const randomColor = Math.floor(Math.random() * colors.length);
-    return randomColor;
-  }
-  document.getElementById('temp_user_avatar').style.backgroundColor=random();
   document.getElementById('temp_user_avatar').innerHTML=tempAvatar;
   document.getElementById('temp_user_avatar').style.display="block";
  console.log('no avatar icon') ;
