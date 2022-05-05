@@ -162,8 +162,8 @@ netlifyIdentity.on('logout', () => {
 
   function changeProfilePic(imageURL){
     var user1 = netlifyIdentity.currentUser();
+     imageURL1 = imageURL.replace('http://','*****add-http*****');
   netlifyIdentity.currentUser()
-    imageURL1 = imageURL.replace('http://','*****add-http*****');
   .update({ email: imageURL1+"@pay-no-attention-to-this.com" })
   // I think this is broken lmao -->  .then(user => console.log("Updated user %s", user))
   .catch(error => {
