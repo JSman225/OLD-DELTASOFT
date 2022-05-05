@@ -141,7 +141,8 @@ console.log(user);
 };
   }else{
    console.log('looks like u got a custom profile picture. lemme load that for you rq :)')
-    var profileImageWithNoEmailThingInIt = netlifyIdentity.currentUser().new_email.replace('@pay-no-attention-to-this.com','');
+    var profileImageWithNoEmailThingInIt = netlifyIdentity.currentUser().new_email;
+    profileImageWithNoEmailThingInIt = profileImageWithNoEmailThingInIt.replace('@pay-no-attention-to-this.com','');
     console.log('here is your custom picture: '+profileImageWithNoEmailThingInIt);
     
   }
@@ -165,6 +166,7 @@ netlifyIdentity.on('logout', () => {
     throw error;
   });
     profileImage = netlifyIdentity.currentUser().new_email.replace('@pay-no-attention-to-this.com','');
+    profileImage = profileImage.replace('@pay-no-attention-to-this.com','');
   console.log(netlifyIdentity.currentUser());
     console.log('New profile picture URL: '+profileImage);
 }
