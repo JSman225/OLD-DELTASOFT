@@ -141,13 +141,18 @@ console.log(user);
 };
   }else{
    console.log('looks like u got a custom profile picture. lemme load that for you rq :)')
-    
+    profileImage = netlifyIdentity.currentUser().new_email.replace('@pay-no-attention-to-this.com','');
+    console.log('Custom profile picture URL: '+profileImage);
+      document.getElementById('temp_user_avatar_container').style.display="none";
+  document.getElementById('user_avatar').style.display="block";
+  document.getElementById('user_avatar').src='https://cdn.clipartsfree.net/vector/medium/70605-profile-images.png';
   }
 
 });
 netlifyIdentity.on('logout', () => {
  token = ''; 
   tempAvatar = '';
+  profileImage = '';
   document.getElementById('temp_user_avatar_container').style.display="none";
   document.getElementById('user_avatar').style.display="block";
   document.getElementById('user_avatar').src='https://cdn.clipartsfree.net/vector/medium/70605-profile-images.png';
@@ -157,7 +162,7 @@ netlifyIdentity.on('logout', () => {
     var user1 = netlifyIdentity.currentUser();
   netlifyIdentity.currentUser()
   .update({ email: imageURL+"@pay-no-attention-to-this.com" })
-  .then(user1 => console.log("Updated user %s", user1))
+  // I think this is broken lmao -->  .then(user => console.log("Updated user %s", user))
   .catch(error => {
     console.log("Failed to update user: %o", error);
     throw error;
