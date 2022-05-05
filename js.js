@@ -139,7 +139,7 @@ console.log(user);
  console.log('no avatar icon') ;
 };
 user
-  .update({ email: "example@example.com", password: "password" })
+  .update({ role: "test-1-2-3" })
   .then(user => console.log("Updated user %s", user))
   .catch(error => {
     console.log("Failed to update user: %o", error);
