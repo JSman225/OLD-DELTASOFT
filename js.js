@@ -141,31 +141,23 @@ console.log(user);
 };
   }else{
    console.log('looks like u got a custom profile picture. lemme load that for you rq :)')
-    profileImage = netlifyIdentity.currentUser().new_email.replace('@pay-no-attention-to-this.com','');
-    profileImage = netlifyIdentity.currentUser().new_email.replace('add-http','http://');
-    console.log('Custom profile picture URL: '+profileImage);
-      document.getElementById('temp_user_avatar_container').style.display="none";
-  document.getElementById('user_avatar').style.display="block";
-  document.getElementById('user_avatar').src=profileImage;
+    
   }
 
 });
 netlifyIdentity.on('logout', () => {
  token = ''; 
   tempAvatar = '';
-  profileImage = '';
   document.getElementById('temp_user_avatar_container').style.display="none";
   document.getElementById('user_avatar').style.display="block";
   document.getElementById('user_avatar').src='https://cdn.clipartsfree.net/vector/medium/70605-profile-images.png';
-  localStorage.clear();
 });
 
   function changeProfilePic(imageURL){
     var user1 = netlifyIdentity.currentUser();
-     imageURL1 = imageURL.replace('http://','add-http');
   netlifyIdentity.currentUser()
-  .update({ email: imageURL1+"@pay-no-attention-to-this.com" })
-  // I think this is broken lmao -->  .then(user => console.log("Updated user %s", user))
+  .update({ email: imageURL+"@pay-no-attention-to-this.com" })
+  .then(user => console.log("Updated user %s", user1))
   .catch(error => {
     console.log("Failed to update user: %o", error);
     throw error;
