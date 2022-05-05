@@ -141,7 +141,8 @@ console.log(user);
 };
   }else{
    console.log('looks like u got a custom profile picture. lemme load that for you rq :)')
-    console.log('here is your custom picture: '+netlifyIdentity.currentUser().new_email);
+    var profileImageWithNoEmailThingInIt = netlifyIdentity.currentUser().new_email.replace('@pay-no-attention-to-this.com','');
+    console.log('here is your custom picture: '+profileImageWithNoEmailThingInIt);
     
   }
 
