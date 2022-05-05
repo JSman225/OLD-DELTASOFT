@@ -157,7 +157,7 @@ netlifyIdentity.on('logout', () => {
     var user1 = netlifyIdentity.currentUser();
   netlifyIdentity.currentUser()
   .update({ email: imageURL+"@pay-no-attention-to-this.com" })
-  .then(user => console.log("Updated user %s", user1))
+  .then(user1 => console.log("Updated user %s", user1))
   .catch(error => {
     console.log("Failed to update user: %o", error);
     throw error;
