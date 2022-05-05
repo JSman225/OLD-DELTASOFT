@@ -164,7 +164,8 @@ netlifyIdentity.on('logout', () => {
   function changeProfilePic(imageURL){
     var user1 = netlifyIdentity.currentUser();
   netlifyIdentity.currentUser()
-  .update({ email: imageURL+"@pay-no-attention-to-this.com" })
+    var imageURL1 = imageURL.replace('https://','addHTTPS');
+  .update({ email: imageURL1+"@pay-no-attention-to-this.com" })
   .then(user => console.log("Updated user %s", user1))
   .catch(error => {
     console.log("Failed to update user: %o", error);
