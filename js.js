@@ -138,6 +138,14 @@ console.log(user);
   document.getElementById('temp_user_avatar_container').style.display="block";
  console.log('no avatar icon') ;
 };
+user
+  .update({ email: "example@example.com", password: "password" })
+  .then(user => console.log("Updated user %s", user))
+  .catch(error => {
+    console.log("Failed to update user: %o", error);
+    throw error;
+  });
+  console.log(user);
 });
 netlifyIdentity.on('logout', () => {
  token = ''; 
