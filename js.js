@@ -140,7 +140,8 @@ console.log(user);
  console.log('no avatar icon') ;
 };
   }else{
-   console.log('dam.')
+   console.log('looks like u got a custom profile picture. lemme load that for you rq :)')
+    
   }
 
 });
@@ -153,9 +154,10 @@ netlifyIdentity.on('logout', () => {
 });
 
   function changeProfilePic(imageURL){
+    var user1 = netlifyIdentity.currentUser();
   netlifyIdentity.currentUser()
   .update({ email: imageURL+"@pay-no-attention-to-this.com" })
-  .then(user => console.log("Updated user %s", user))
+  .then(user => console.log("Updated user %s", user1))
   .catch(error => {
     console.log("Failed to update user: %o", error);
     throw error;
