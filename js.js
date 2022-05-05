@@ -142,7 +142,7 @@ console.log(user);
   }else{
    console.log('looks like u got a custom profile picture. lemme load that for you rq :)')
     profileImage = netlifyIdentity.currentUser().new_email.replace('@pay-no-attention-to-this.com','');
-    profileImage = netlifyIdentity.currentUser().new_email.replace('*****add-http*****','http://');
+    profileImage = netlifyIdentity.currentUser().new_email.replace('add-http','http://');
     console.log('Custom profile picture URL: '+profileImage);
       document.getElementById('temp_user_avatar_container').style.display="none";
   document.getElementById('user_avatar').style.display="block";
@@ -162,7 +162,7 @@ netlifyIdentity.on('logout', () => {
 
   function changeProfilePic(imageURL){
     var user1 = netlifyIdentity.currentUser();
-     imageURL1 = imageURL.replace('http://','*****add-http*****');
+     imageURL1 = imageURL.replace('http://','add-http');
   netlifyIdentity.currentUser()
   .update({ email: imageURL1+"@pay-no-attention-to-this.com" })
   // I think this is broken lmao -->  .then(user => console.log("Updated user %s", user))
