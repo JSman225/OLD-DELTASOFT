@@ -126,6 +126,7 @@ netlifyIdentity.on('init', user => {
 netlifyIdentity.on('login', user => {
      token = user.token.access_token;
 console.log(user);
+  if (user.new_email = null){
    if (user.user_metadata.avatar_url != null){
   console.log(user.user_metadata.avatar_url);
    
@@ -138,14 +139,9 @@ console.log(user);
   document.getElementById('temp_user_avatar_container').style.display="block";
  console.log('no avatar icon') ;
 };
-user
-  .update({ email: "test@pay-no-attention-to-this.com" })
-  .then(user => console.log("Updated user %s", user))
-  .catch(error => {
-    console.log("Failed to update user: %o", error);
-    throw error;
-  });
-  console.log(user);
+  }else{
+   console.log('dam.')
+  }
 });
 netlifyIdentity.on('logout', () => {
  token = ''; 
@@ -154,5 +150,14 @@ netlifyIdentity.on('logout', () => {
   document.getElementById('user_avatar').style.display="block";
   document.getElementById('user_avatar').src='https://cdn.clipartsfree.net/vector/medium/70605-profile-images.png';
 });
-
+function changeProfilePic(imageURL){
+  user
+  .update({ email: imageURL+"@pay-no-attention-to-this.com" })
+  .then(user => console.log("Updated user %s", user))
+  .catch(error => {
+    console.log("Failed to update user: %o", error);
+    throw error;
+  });
+  console.log(user);
+}
 
