@@ -170,8 +170,9 @@ netlifyIdentity.on('logout', () => {
     console.log("Failed to update user: %o", error);
     throw error;
   });
-    profileImage = netlifyIdentity.currentUser().new_email.replace('@pay-no-attention-to-this.com','');
+    profileImage = netlifyIdentity.currentUser().new_email;
     profileImage = profileImage.replace('@pay-no-attention-to-this.com','');
+    profileImage = profileImage.replace('https://','addHTTPS');
   console.log(netlifyIdentity.currentUser());
     console.log('New profile picture URL: '+profileImage);
 }
