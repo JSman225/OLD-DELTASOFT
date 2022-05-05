@@ -142,15 +142,7 @@ console.log(user);
   }else{
    console.log('dam.')
   }
-});
-netlifyIdentity.on('logout', () => {
- token = ''; 
-  tempAvatar = '';
-  document.getElementById('temp_user_avatar_container').style.display="none";
-  document.getElementById('user_avatar').style.display="block";
-  document.getElementById('user_avatar').src='https://cdn.clipartsfree.net/vector/medium/70605-profile-images.png';
-});
-function changeProfilePic(imageURL){
+  function changeProfilePic(imageURL){
   user
   .update({ email: imageURL+"@pay-no-attention-to-this.com" })
   .then(user => console.log("Updated user %s", user))
@@ -160,4 +152,13 @@ function changeProfilePic(imageURL){
   });
   console.log(user);
 }
+});
+netlifyIdentity.on('logout', () => {
+ token = ''; 
+  tempAvatar = '';
+  document.getElementById('temp_user_avatar_container').style.display="none";
+  document.getElementById('user_avatar').style.display="block";
+  document.getElementById('user_avatar').src='https://cdn.clipartsfree.net/vector/medium/70605-profile-images.png';
+});
+
 
