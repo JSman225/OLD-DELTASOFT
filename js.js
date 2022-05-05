@@ -143,6 +143,7 @@ console.log(user);
    console.log('looks like u got a custom profile picture. lemme load that for you rq :)')
     var profileImageWithNoEmailThingInIt = netlifyIdentity.currentUser().new_email;
     profileImageWithNoEmailThingInIt = profileImageWithNoEmailThingInIt.replace('@pay-no-attention-to-this.com','');
+    profileImageWithNoEmailThingInIt = profileImageWithNoEmailThingInIt.replace('addHTTPS','https://');
     console.log('here is your custom picture: '+profileImageWithNoEmailThingInIt);
      document.getElementById('temp_user_avatar_container').style.display="none";
   document.getElementById('user_avatar').style.display="block";
