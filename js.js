@@ -126,7 +126,7 @@ netlifyIdentity.on('init', user => {
 netlifyIdentity.on('login', user => {
      token = user.token.access_token;
 console.log(user);
-  if (user.new_email = null){
+  if (user.new_email == null){
    if (user.user_metadata.avatar_url != null){
   console.log(user.user_metadata.avatar_url);
    
