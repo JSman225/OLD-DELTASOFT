@@ -145,7 +145,7 @@ console.log(user);
     console.log('Custom profile picture URL: '+profileImage);
       document.getElementById('temp_user_avatar_container').style.display="none";
   document.getElementById('user_avatar').style.display="block";
-  document.getElementById('user_avatar').src='https://cdn.clipartsfree.net/vector/medium/70605-profile-images.png';
+  document.getElementById('user_avatar').src=profileImage;
   }
 
 });
