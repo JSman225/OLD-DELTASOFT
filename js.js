@@ -144,7 +144,9 @@ console.log(user);
     var profileImageWithNoEmailThingInIt = netlifyIdentity.currentUser().new_email;
     profileImageWithNoEmailThingInIt = profileImageWithNoEmailThingInIt.replace('@pay-no-attention-to-this.com','');
     console.log('here is your custom picture: '+profileImageWithNoEmailThingInIt);
-    
+     document.getElementById('temp_user_avatar_container').style.display="none";
+  document.getElementById('user_avatar').style.display="block";
+  document.getElementById('user_avatar').src=profileImageWithNoEmailThingInIt;
   }
 
 });
