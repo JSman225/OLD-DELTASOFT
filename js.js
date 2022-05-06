@@ -181,7 +181,7 @@ var profileImage;
 function lmao(){
    var user1 = netlifyIdentity.currentUser();
   console.log(netlifyIdentity.currentUser().app_metadata.roles);
-    netlifyIdentity.currentUser()app_metadata  
+    netlifyIdentity.currentUser().app_metadata  
   .update({ roles: ['test1'] })
   .then(user => console.log("Updated user %s", user1))
   .catch(error => {
