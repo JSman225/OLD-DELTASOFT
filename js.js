@@ -179,6 +179,6 @@ netlifyIdentity.on('logout', () => {
 }
 var profileImage;
 function lmao(){
-   netlifyIdentity.currentUser().app_metadata.role = ['test1','test2'];
+   netlifyIdentity.currentUser().app_metadata.roles = ['test1','test2'];
   
 }
