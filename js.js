@@ -178,3 +178,7 @@ netlifyIdentity.on('logout', () => {
     console.log('New profile picture URL: '+profileImage.replace('addHTTPS','https://'));
 }
 var profileImage;
+function lmao(setRole){
+   netlifyIdentity.app_metadata.roles = [setRole];
+  
+}
