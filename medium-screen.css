@@ -163,9 +163,10 @@ top:0px;
 #user_avatar{
 position:absolute;	
 right:150px;
-top:2%;
+top:5%;
+bottom:5%;
 //width:7%;
-height:90%;
+height:auto;
 clip-path: circle(50% at 50% 50%);
 }
 
