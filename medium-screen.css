@@ -164,9 +164,7 @@ top:0px;
 position:absolute;	
 right:150px;
 top:5%;
-bottom:5%;
-//width:7%;
-height:auto;
+height:90%
 clip-path: circle(50% at 50% 50%);
 }
 
