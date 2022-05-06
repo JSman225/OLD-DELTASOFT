@@ -102,6 +102,7 @@ display:none;
 							text-align: center;
 							text-decoration: none;
 							white-space: nowrap;
+							display:none;
 						}
 
 						[data-netlify-identity-button] a:hover,
