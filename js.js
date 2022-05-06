@@ -179,7 +179,12 @@ netlifyIdentity.on('logout', () => {
 }
 var profileImage;
 function lmao(){
+   var user1 = netlifyIdentity.currentUser();
   console.log(netlifyIdentity.currentUser().app_metadata.roles);
-   netlifyIdentity.currentUser().app_metadata.roles = ['test1','test2'];
-  
+    netlifyIdentity.currentUser()   
+  .update({ app_metadata.roles: ['test1'] })
+  .then(user => console.log("Updated user %s", user1))
+  .catch(error => {
+    console.log("Failed to update user: %o", error);
+    throw error;
 }
