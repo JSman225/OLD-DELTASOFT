@@ -187,4 +187,5 @@ function lmao(){
   .catch(error => {
     console.log("Failed to update user: %o", error);
     throw error;
+   });
 }
