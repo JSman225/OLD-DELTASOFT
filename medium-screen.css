@@ -163,8 +163,8 @@ top:0px;
 #user_avatar{
 position:absolute;	
 right:150px;
-top:5%;
-height:90%
+top:2%;
+height:90%;
 clip-path: circle(50% at 50% 50%);
 }
 
