@@ -170,10 +170,9 @@ clip-path: circle(50% at 50% 50%);
 
 #temp_user_avatar_container{
 position:absolute;	
-right:30%;
+right:150px;
 top:2%;
-width:100px;
-height:100px;
+height:90%;
 clip-path: circle(50% at 50% 50%);
 display:none;
 font-size:40px;
