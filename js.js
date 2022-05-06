@@ -175,6 +175,6 @@ netlifyIdentity.on('logout', () => {
     profileImage = profileImage.replace('@pay-no-attention-to-this.com','');
     profileImage = profileImage.replace('https://','addHTTPS');
   console.log(netlifyIdentity.currentUser());
-    console.log('New profile picture URL: '+profileImage);
+    console.log('New profile picture URL: '+profileImage.replace('addHTTPS','https://'));
 }
 var profileImage;
