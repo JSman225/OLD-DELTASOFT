@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @font-face {
   font-family: "Deltasoft";
-  src: url("..\Deltasoft.ttf");
+  src: url("Deltasoft.ttf");
 }
 html{
 //overflow:hidden;
@@ -119,7 +119,7 @@ display:none;
   position:absolute;
 left: 0;
 top:0px;
-  width: 100vh;
+  height: 100vh;
 margin-left: 50%;
 transform: translateX(-50%);
 }
