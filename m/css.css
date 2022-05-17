@@ -126,7 +126,12 @@ transform: translateX(-50%);
 
 
 
-
+.resource{
+position:absolute;
+left:-50vh;
+top:0px;
+height:100vh;
+}
 
 
 
