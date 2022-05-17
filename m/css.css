@@ -139,6 +139,7 @@ right:150px;
 top:2%;
 height:90%;
 clip-path: circle(50% at 50% 50%);
+display:none;
 }
 
 #temp_user_avatar_container{
