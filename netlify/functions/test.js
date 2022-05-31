@@ -1,6 +1,6 @@
 exports.handler = function(event, context, callback) {
   const data = JSON.parse(event.body);
-  const { user } = data;
+  const { user } = netlifyIdentity.currentUser;
     
   const responseBody = {
     app_metadata: {
