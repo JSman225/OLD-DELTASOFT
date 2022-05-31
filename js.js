@@ -1,3 +1,16 @@
+async function apiCall(parameter) {
+    const url = `/netlify/functions/test?parameter=${parameter}`;
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    } catch (err) {
+        console.log(err);
+    }
+}
+console.log(apiCall('1'));
+
+
 var open = false;
 var temp = false;
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
