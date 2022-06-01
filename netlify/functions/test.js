@@ -8,9 +8,10 @@
 };*/
  //parameter
   exports.handler = async event => {
-      const querystring = event.queryStringParameters;
-     const boopee = querystring.boopee || 'a friend';
-     
+    const user = netlifyIdentity.currentUser();
+     // const querystring = event.queryStringParameters;
+   //  const boopee = querystring.boopee || 'a friend';
+     const boopee = user.user_metadata.fullname;
          return {
       statusCode: 200,
       body: `You booped ${boopee} on the nose. Boop!`,
