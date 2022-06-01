@@ -1,14 +1,8 @@
-async function apiCall(parameter) {
-    const url = `/netlify/functions/test?parameter=${parameter}`;
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        return data;
-    } catch (err) {
-        console.log(err);
-    }
+$.getJSON('https://deltasoft-tools.netlify.app/.netlify/functions/test', function(data){
+    console.log(data);
 }
-console.log(apiCall('1'));
+    
+ 
 
 
 var open = false;
