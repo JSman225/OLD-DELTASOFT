@@ -10,7 +10,7 @@
   exports.handler = async event => {
     
     const querystring = event.queryStringParameters;
-    const boopee = querystring.boopee || 'no user? wtf?!?';
+    const boopee = querystring.name || 'no user? wtf?!?';
      
          return {
       statusCode: 200,
