@@ -8,7 +8,7 @@
 };*/
  //parameter
   exports.handler = async event => {
-    const user = netlifyIdentity.currentUser();
+    
     const querystring = event.queryStringParameters;
     const boopee = querystring.boopee || 'no user? wtf?!?';
      
