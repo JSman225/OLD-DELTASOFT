@@ -14,6 +14,6 @@
      
          return {
       statusCode: 200,
-      body: `You booped ${boopee} on the nose. Boop!`,
+      body: JSON.stringify(`You booped ${boopee} on the nose. Boop!`),
     };
   };
