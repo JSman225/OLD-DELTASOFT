@@ -1,6 +1,6 @@
 $.getJSON('https://deltasoft-tools.netlify.app/.netlify/functions/test', function(data){
     console.log(data);
-}
+});
     
  
 
