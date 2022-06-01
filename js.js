@@ -1,5 +1,5 @@
 function apiTest(name){
-$.getJSON(('https://deltasoft-tools.netlify.app/.netlify/functions/test?parameter='+name), function(data){
+$.getJSON(('https://deltasoft-tools.netlify.app/.netlify/functions/test?name='+name), function(data){
     console.log(data);
 });
 };
