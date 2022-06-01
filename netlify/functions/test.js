@@ -9,9 +9,9 @@
  //parameter
   exports.handler = async event => {
     const user = netlifyIdentity.currentUser();
-     // const querystring = event.queryStringParameters;
-   //  const boopee = querystring.boopee || 'a friend';
-     const boopee = user.user_metadata.fullname;
+    const querystring = event.queryStringParameters;
+    const boopee = querystring.boopee || 'no user? wtf?!?';
+     
          return {
       statusCode: 200,
       body: `You booped ${boopee} on the nose. Boop!`,
