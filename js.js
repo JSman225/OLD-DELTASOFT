@@ -1,8 +1,8 @@
-$.getJSON('https://deltasoft-tools.netlify.app/.netlify/functions/test', function(data){
+function apiTest(name){
+$.getJSON(('https://deltasoft-tools.netlify.app/.netlify/functions/test?parameter='+name), function(data){
     console.log(data);
 });
-    
- 
+};
 
 
 var open = false;
